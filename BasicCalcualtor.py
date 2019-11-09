@@ -1,14 +1,22 @@
-num1 = input("Enter a Number: ")
-num2 = input("Enter another Number: ")
+num1 = input("Enter First Number: ")
+op = input("Enter Operation: ")
+num2 = input("Enter Second Number: ")
 
-add = float(num1) + float(num2)
-sub = float(num1) - float(num2)
-mul = float(num1) * float(num2)
-div = float(num1) / float(num2)
-mod = float(num1) % float(num2)
 
-print("Addition = " + str(add))
-print("Subtraction = " + str(sub))
-print("Multiplication = " + str(mul))
-print("Division = " + str(div))
-print("Modulus = " + str(mod))
+if op == "+":
+    add = float(num1) + float(num2)
+    print(add)
+elif op == "-":
+    sub = float(num1) - float(num2)
+    print(sub)
+elif op == "*":
+    mul = float(num1) * float(num2)
+    print(mul)
+elif op == "/":
+    div = float(num1) / float(num2)
+    print(div)
+elif op == "%":
+    mod = float(num1) % float(num2)
+    print(mod)
+else:
+    print("Invalid")
